@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --cgold:#c78c06; 
+    --cyelow: #ffe6ac;
+    --cblack: #222;
+    --cwhite: white;
+}
+
+*, *::before, *::after{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+a{text-decoration: none;}
+
+li{list-style: none;}
+
+img, a, ion-icon, button{display: block;}
+
+span{display: inline-block;}
+
+html{font-family: "Open Sans", sans-serif;}
+
+body{
+    border: 3px solid red;
+}
+
+.c_orange{
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+}
+
+.wide_navbar{
+    background-color: var(--cblack);
+    border: 3px solid orange;
+    
+}
+
+.narrow_navbar{
+    color: var(--cgold);
+    border: 3px solid orange;
+    margin: 0 5px;
+}
+
+.narrow_navbar ul{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.narrow_navbar ul .logo{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.narrow_navbar ul .active{
+    background-color: var(--cgold);
+    color: var(--cblack);
+}
+
+.active{
+    color: var(--cwhite);
+}
+
+.search_imput{
+    width: 100%;
+
+}
+
+.wide_hero_section{
+    position: relative;
+    border: 3px solid orange;
+    background-image: url(./images/hero_section_background.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.narrow_hero_section{
+    border: 3px solid orange;
+    background-color: rgba(18, 3, 3, 0.768);
+    position: absolute;
+    top: 10%; 
+    left:0; 
+    text-align: left;
+}
+
+.narrow_hero_section h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(229, 21, 215);
+}
+.narrow_hero_section p{
+    font-size: 1rem;
+    color: var(--cwhite);
+}
+.narrow_hero_section .contact_button{
+    background-color: var(--cgold);
+}
+
+.narrow_hero_section .contact_button a{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+
+.narrow_hero_section .contact_button a .button_text{
+    font-weight: 600;
+}
+
+
+
+
+/* ******** MAIN  ********* */
+
+.luminous_green{
+    border: 3px solid lawngreen;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ***********   Our Services   ******* */
+.luminous_green .wide_pink{
+    background-color: var(--cyelow);
+    border: 3px solid rgb(243, 53, 189);
+}
+
+.luminous_green .wide_pink .inner_pink{
+    display: flex;
+    flex-direction: column;
+}
+
+.luminous_green .wide_pink .inner_pink .flex_pinks{
+    border: 3px solid rgb(243, 53, 189);
+}
+
+.luminous_green .wide_pink .inner_pink img{
+    width: 100%;
+    
+}
+
+.luminous_green .wide_pink .inner_pink h2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: rgb(229, 21, 215);
+}
+.luminous_green .wide_pink .inner_pink p{
+    font-size: 1rem;
+}
+
+/* ***********   Our Services   ******* */
+.luminous_green .wide_green{
+    background-color: var(--cwhite);
+}
+
+.luminous_green .wide_green .inner_green{
+    display: grid;
+}
+
+.luminous_green .wide_green .inner_green .box_items .box_item_image img{
+    width: 100%;
+}
+
+.luminous_green .wide_green .inner_green .box_items {
+    background-color: var(--cyelow);
+}
+
+
+.luminous_green .wide_green
+/* ***************** Blue  ***** */
+.luminous_green .wide_blue{
+    position: relative;
+}
+
+.luminous_green .wide_blue img{
+    width: 100%;
+    /* position: relative;
+    border: 3px solid orange;
+    background-image: url(./images/our_vision.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px; */
+
+}
+
+.luminous_green .wide_blue .narrow_blue{
+    margin: 1rem;
+}
+
+/* **************  Red  ********** */
+.luminous_green .wide_red{
+    background-color: var(--cwhite);
+}
+
+.luminous_green .wide_red .inner_red{
+    display: grid;
+}
+
+.luminous_green .wide_red .inner_red .our_team_item{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cyelow);
+}
+
+.luminous_green .wide_red .inner_red .our_team_item .team_item_image img{
+    width: 100%;
+}
+
+
+
+
+.luminous_green .wide_purple{
+
+}
+
+
+ /* Contact form styles */
+ .contact_box_map{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+
+ }
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 2rem;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+    .contact-form textarea {
+      height: 100px;
+    }
+    .contact-form button {
+      background-color:#c78c06;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .contact_map{
+        width: 90%;
+    }
+
+    table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  /* ********************************* */
+
+.yellow{
+    border: 3px solid yellow;
+}
+
+/* *********   Footer   ******* */
