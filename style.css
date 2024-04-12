@@ -31,7 +31,7 @@ span{display: inline-block;}
 html{font-family: "Open Sans", sans-serif;}
 
 body{
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .c_orange{
@@ -49,7 +49,7 @@ body{
 
 .narrow_navbar{
     color: var(--cgold);
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     margin: 0 5px;
 }
 
@@ -83,7 +83,7 @@ body{
 
 .wide_hero_section{
     position: relative;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     background-image: url(./images/hero_section_background.jfif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ body{
 }
 
 .narrow_hero_section{
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     background-color: rgba(18, 3, 3, 0.768);
     position: absolute;
     top: 10%; 
@@ -128,7 +128,7 @@ body{
 /* ******** MAIN  ********* */
 
 .luminous_green{
-    border: 3px solid lawngreen;
+    /* border: 3px solid lawngreen; */
     display: flex;
     flex-direction: column;
 }
@@ -136,7 +136,7 @@ body{
 /* ***********   Our Services   ******* */
 .luminous_green .wide_pink{
     background-color: var(--cyelow);
-    border: 3px solid rgb(243, 53, 189);
+    /* border: 3px solid rgb(243, 53, 189); */
 }
 
 .luminous_green .wide_pink .inner_pink{
@@ -145,7 +145,7 @@ body{
 }
 
 .luminous_green .wide_pink .inner_pink .flex_pinks{
-    border: 3px solid rgb(243, 53, 189);
+    /* border: 3px solid rgb(243, 53, 189); */
 }
 
 .luminous_green .wide_pink .inner_pink img{
@@ -189,7 +189,7 @@ body{
 .luminous_green .wide_blue img{
     width: 100%;
     /* position: relative;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     background-image: url(./images/our_vision.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -204,6 +204,7 @@ body{
 /* **************  Red  ********** */
 .luminous_green .wide_red{
     background-color: var(--cwhite);
+    width: 100%;
 }
 
 .luminous_green .wide_red .inner_red{
@@ -224,9 +225,14 @@ body{
 
 
 .luminous_green .wide_purple{
-
+background-color: var(--cwhite);
+width: 100%;
 }
 
+.luminous_green .wide_purple .inner_purple{
+    display: grid;
+    width: 100%;
+}
 
  /* Contact form styles */
  .contact_box_map{
@@ -270,7 +276,7 @@ body{
     }
 
     .contact_map{
-        width: 90%;
+        width: 100%;
     }
 
     table {
@@ -288,7 +294,16 @@ body{
   /* ********************************* */
 
 .yellow{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+}
+
+.yellow .wide_yellow{
+    background-color: var(--cblack);
+    color: var(--cgold);
+}
+
+.yellow .wide_yellow .inner_yellow{
+    padding: 10px;
 }
 
 /* *********   Footer   ******* */
